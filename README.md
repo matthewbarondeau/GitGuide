@@ -129,12 +129,12 @@ Now you will need to give a commit message describing what that commit changed. 
 ![](Images/gitcommit.png)
 
 ###### git log
-Now that you have gone through the process of commiting, you need to track your commits. The easiest way to do this is by using the log functionality. The syntax for this is "git log"
+Now that you have gone through the process of committing, you need to track your commits. The easiest way to do this is by using the log functionality. The syntax for this is "git log"
 which will pull up the log. An example is shown below.
 
-![](Images/gitlog.png)
+Here you can see the commit followed by an alphanumeric string. This string is the unique identifier for that commit. If you want to work with that commit in the future, use that string. Additionally, you can see the author, when it was committed and what the commit did.
 
-Above, you can see the commit followed by an alphaneumeric string. This string is the unique identifier for that commit. If you want to work with that commit in the future, use that string. Additionally, you can see the author, when it was committed and what the commit did.
+![](Images/gitlog.png)
 
 ###### git diff
 Now that you have created some commits and viewed the log, it may be beneficial to find what changed between commits. Or more commonly, what your partner changed in their commits. This can be done using the diff command as shown below.
