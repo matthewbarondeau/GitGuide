@@ -55,10 +55,10 @@ This section shall describe how GIT works as well as common applications.
 ### Introduction to Version Control Languages
 A version control language is a tool that tracks changes to files and provides users a way to review past changes. There are several version control tools available to you for free, but in EE306 and EE319k we will primarily use Git. Git has two large online repositories that grant free accounts, GitLab and GitHub, but we shall primarily use GitHub.
 
-A version control language tracks the status of a directory and anytime there is a change, it makes a note. The user can choose which changes to save and come back to. In programming, we can use version control languages to save points where significant progress in code has been made.
+A version control language tracks the status of a directory and can create specific save spots. The user can choose which changes to save and come back to. In programming, we can use version control languages to save points where significant progress in code has been made.
 
 ### Git Background
-Git was invented by Linus Torvalds in 2005. Since then, it has become a popular tool for programmers and a valuable teaching tool. Git works by keeping track of changes in a repository, with the most recent version called the HEAD. This head is normally what the programmer is currently working on.  
+Git was invented by Linus Torvalds. In the years since, it has become a popular tool for programmers and a valuable teaching tool. Git works by keeping track of changes in a repository, with the most recent version called the HEAD. This head is normally what the programmer is currently working on.  
 
 Git works by having a staging area, a working area, and a series of saved commits. First, let me describe the working area. The working area is the files that you are working on. Think of this as the files that appear and that you can change. Git can see all the changes in this working area, but you have to tell git to care about certain files and save their state. This saving process is two fold. First, you need to move the files you care about to a staging area. Then, once you have everything you want to save there, you perform a commit. The commit will move everything in your staging area into the saved commit. In this way, you can create save points in your code as you work.
 
@@ -130,7 +130,7 @@ Now you will need to give a commit message describing what that commit changed. 
 
 ###### git log
 Now that you have gone through the process of commiting, you need to track your commits. The easiest way to do this is by using the log functionality. The syntax for this is "git log"
-which will pll up the log. An example is shown below.
+which will pull up the log. An example is shown below.
 
 ![](Images/gitlog.png)
 
@@ -194,26 +194,19 @@ The final git feature that I will talk about is the git stash. Git stash is usef
 This section shall describe how to use git specifically with Keil projects. There will also be a section in which I show the process for adding files between Keil users and pulling them down.
 
 ### Example
-First, I am going to create a repository on GitHub for my first assignment.
+First, I am going to create a repository on GitHub for my first assignment. Then I am going to push the folder containing my project up to GitHub.
 
-![](Images/example1.png)
+![](Images/Example1.png)
 
-Once I have created this repository, I am going to push the folder containing my project up to GitHub.
+Now, I am going to make several changes and add a few files. The git log below shows my changes but if I wanted a more in depth view I could use git diff with the two commit ID's. An example here would be "git diff 304c667 cf4daa".
 
-![](Images/example2.png)
+![](Images/Example2.png)
 
-Now, I am going to make several changes and add a few files. The git log below shows my changes:
+From here, I am going to pull this project onto a different computer. With Keil 5, you should be able to see any new files added to the project. If that is not the case, you can manually add them as shown below:
 
-![](Images/example3.png)
+![](Images/Example3.png)
 
-From here, I am going to pull this project onto a different computer so that I can point out a few things.
-
-![](Images/example4.png)
-
-### Importing files to Keil Project
-To begin, first you will want to have a local project and push it to github, or pull the starter code down into a local repository. I will have a s
-
-### Files that need to be shared between computers
+![](Images/Example4.png)
 
 ## Practice Exercises
 This section shall describe additional practices and resources available if you want to explore git more.
