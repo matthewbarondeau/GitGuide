@@ -194,6 +194,8 @@ The final git feature that I will talk about is the git stash. Git stash is usef
 This section shall describe how to use git specifically with Keil projects. There will also be a section in which I show the process for adding files between Keil users and pulling them down.
 
 ### Example
+The example shown here can be found at https://github.com/matthewbarondeau/GitExample
+
 First, I am going to create a repository on GitHub for my first assignment. Then I am going to push the folder containing my project up to GitHub.
 
 ![](Images/Example1.png)
