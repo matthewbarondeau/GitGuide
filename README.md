@@ -132,14 +132,14 @@ Now you will need to give a commit message describing what that commit changed. 
 Now that you have gone through the process of committing, you need to track your commits. The easiest way to do this is by using the log functionality. The syntax for this is "git log"
 which will pull up the log. An example is shown below.
 
-Here you can see the commit followed by an alphanumeric string. This string is the unique identifier for that commit. If you want to work with that commit in the future, use that string. Additionally, you can see the author, when it was committed and what the commit did.
+![](Images/gitlog.PNG)
 
-![](Images/gitlog.png)
+Here you can see the commit followed by an alphanumeric string. This string is the unique identifier for that commit. If you want to work with that commit in the future, use that string. Additionally, you can see the author, when it was committed and what the commit did.
 
 ###### git diff
 Now that you have created some commits and viewed the log, it may be beneficial to find what changed between commits. Or more commonly, what your partner changed in their commits. This can be done using the diff command as shown below.
 
-![](Images/gitdiff.png)
+![](Images/gitdiff.PNG)
 
 Shown in the example diff, where the removed text is in red and the new additions are green. You can also see new file additions using this command.
 
@@ -204,9 +204,9 @@ Now, I am going to make several changes and add a few files. The git log below s
 
 From here, I am going to pull this project onto a different computer. With Keil 5, you should be able to see any new files added to the project. If that is not the case, you can manually add them as shown below:
 
-![](Images/Example3.png)
+![](Images/Example3.PNG)
 
-![](Images/Example4.png)
+![](Images/Example4.PNG)
 
 ## Practice Exercises
 This section shall describe additional practices and resources available if you want to explore git more.
