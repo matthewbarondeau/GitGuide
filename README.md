@@ -128,6 +128,9 @@ Now you will need to give a commit message describing what that commit changed. 
 
 ![](Images/gitcommit.png)
 
+Please make sure you follow this excellent [commit guide](https://chris.beams.io/posts/git-commit/) on conventions and styles about making comments.
+
+
 ###### git log
 Now that you have gone through the process of committing, you need to track your commits. The easiest way to do this is by using the log functionality. The syntax for this is "git log"
 which will pull up the log. An example is shown below.
