@@ -25,13 +25,20 @@ Git was invented by Linus Torvalds. In the years since, it has become a popular 
 Git works by having a staging area, a working area, and a series of saved commits. First, let me describe the working area. The working area is the files that you are working on. Think of this as the files that appear and that you can change. Git can see all the changes in this working area, but you have to tell git to care about certain files and save their state. This saving process is two fold. First, you need to move the files you care about to a staging area. Then, once you have everything you want to save there, you perform a commit. The commit will move everything in your staging area into the saved commit. In this way, you can create save points in your code as you work.
 
 ## Git Utilities
-This section shall describe how to use the Git Bash terminal. It shall start with a brief overview of Linux terminal navigation then move on to Git navigation. To start, you need to download Git Bash onto your machine. The link to find Git Bash is here: https://git-scm.com/downloads
+This section shall describe how to use the Git Bash terminal. It shall start with a brief overview of Linux terminal navigation then move on to Git navigation.
 
 ### Git Bash
+
+#### Overview
+Git bash is a bash shell that you can download to do all your git commits. This is the approach I recommend that you take to using git. It allows much more control over the commit process and allows you to become more familiar with the bash shell in general. To start, you need to download Git Bash onto your machine. The link to find Git Bash is here: https://git-scm.com/downloads
+
+If you are unfamiliar with navigating a bash shell, look here for a quick guide: [Bash Navigation](Git_Bash/Linux_Navigation.md)
 
 #### Example Commit
 
 ### Git Desktop
+
+#### Overview
 
 #### Example Commit
 
