@@ -8,28 +8,38 @@ When you first open up GitHub, go to the top left of your screen. There will be 
 Once you have decided on a name and type of repository, select create repository to create a new blank repository. The next step in our process is to connect this remote repository with a local directory on your computer. There are two ways to do this which are discussed below.
 
 #### git clone
-The first idea covered here is cloning. That is, making a local copy of a repository that is stored up on GitHub or GitLab. To start, you need to have a repository on GitHub or GitLab, and grab the HTTPS link. You need this link so that you can safely copy the code onto your machine. An example of finding the HTTPS link and cloning the repository is shown below.
+The first idea covered here is cloning. That is, making a local copy of a repository that is stored up on GitHub or GitLab. To start, you need to have a repository on GitHub or GitLab, and grab the HTTPS link. You need this link so that you can safely copy the code onto your machine. An example of where to find the https link is shown below.
 
-TODO HTTPS link thing
+<p align="center">
+  <img src="../Images/https.png"
+</p>
 
 Once you have the HTTPS link, its time to pick a location locally that you want to put the repository. In the example below, I navigate to the folder I want to put the repository. I then type "git clone" followed by the https link described above. In this example, I am just cloning the repository that contains my git guide.
 
-TODO GIT CLONE IMAGE
+<p align="center">
+  <img src="../Images/GitClone.png"
+</p>
 
 In this way, I can clone an existing repository to a local directory. This can be useful when there is existing code in a repository, but if you have local code or a project that you wish to be associated with a repository, such as in EE319k, the second approach would most likely be to your benefit.
 
 #### git init
 The concept of making a local directory a git repository and then pushing it to a hosting platform like GitHub and GitLab is covered here. The first step, is to navigate to the directory that contains the files and folders you want to be hosted. Then, type the command "git init" which will initialize git for the given directory. Once you have initialized the repository, you will need to perform a commit of all the files you want to push up to GitHub or GitLab. The commit process is covered in more depth down below, so if you have never performed a commit, I encourage you to keep reading down to further your understanding.
 
-TODO git init image
+<p align="center">
+  <img src="../Images/gitinit.png"
+</p>
 
 Once you know how to perform a commit, select the files that you want to push up and commit them. It is normally good form to have the first commit of your files to be called "Initial Commit". Once you have your first commit, you will need to specify where the remote repository should be. Otherwise, how will git know where to push files? To specify this remote location, the command is "git remote add origin https" where the https is the HTTPS link for your repository.
 
-TODO remote and commit image
+<p align="center">
+  <img src="../Images/remotecommit.png"
+</p>
 
 Once you have set the remote location as shown above, it is time to push your files up to the GitHub or GitLab. To do this, you will type "git push -u origin master". This pushes upstream to the remote repository labeled origin and on the master branch.
 
-TODO Git push -u origin master image
+<p align="center">
+  <img src="../Images/pushoriginmaster.png"
+</p>
 
 In case you want the simple short version, the exact sequence you will need to start, for instance, and Keilv5 project for EE319k is shown below.
 
