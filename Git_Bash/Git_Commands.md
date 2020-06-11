@@ -41,10 +41,6 @@ Once you have set the remote location as shown above, it is time to push your fi
   <img src="../Images/pushoriginmaster.png"
 </p>
 
-In case you want the simple short version, the exact sequence you will need to start, for instance, and Keilv5 project for EE319k is shown below.
-
-TODO EE319k Shortcut Init
-
 ### Creating a Commit
 
 #### git status
@@ -92,30 +88,45 @@ Now you will need to give a commit message describing what that commit changed. 
   <img src="../Images/git_commit.png"
 </p>
 
-### Keeping track of your code
+### Keeping track of your commits
 
 #### git log
-Now that you have gone through the process of committing, you need to track your commits. The easiest way to do this is by using the log functionality. The syntax for this is "git log"
-which will pull up the log. An example is shown below.
+So there are two options for seeing what your previous commits were. Once the commits are pushed up to GitHub or GitLab, you can use the GUI to figure out what the commits each did and what lines of code they change. Alternatively, you can use the log functionality built directly into git bash. To pull up the log, the command is "git log", and an example is shown below. One important thing to note before you pull up the log: press the 'q' key to quit out of the log.
 
-Here you can see the commit followed by an alphanumeric string. This string is the unique identifier for that commit. If you want to work with that commit in the future, use that string. Additionally, you can see the author, when it was committed and what the commit did.
+<p align="center">
+  <img src="../Images/git_log.png"
+</p>
+
+Here you can see the commit followed by an alphanumeric string. This string is the unique identifier for that commit. If you want to work with that commit in the future, use that string. For example, if you want to reset to a particular commit, you can use "git commit --hard e35c936" to reset to that particular commit.
 
 #### git diff
-Now that you have created some commits and viewed the log, it may be beneficial to find what changed between commits. Or more commonly, what your partner changed in their commits. This can be done using the diff command as shown below.
+Now that you have created some commits and viewed the log, it may be beneficial to find what changed between commits. Or more commonly, what your partner changed in their commits. To view the difference, the command is "git diff" if you want to see all changes. You can also use "git diff filename" to see the changes in one particular file. Shown below is an example diff, where the removed text is in red and the new additions are green. You can also see new file additions using this command.
 
-Shown in the example diff, where the removed text is in red and the new additions are green. You can also see new file additions using this command.
+<p align="center">
+  <img src="../Images/gitdiff.png"
+</p>
 
 ### Synchronizing between computers
 
 #### git pull
 When coding in groups, you will need to keep track of changes made by other people and merge them into your own code. The first step in this process is pulling the code down to your computer from a repository. Before you pull any code, you need to make sure it is code that you want to fold into your system, and that any changes you made are either already saved or they don't matter.
 
-If you want to save your code, refer to git stash as a way to temporarily store your changes. If there are changes that you don't want, refer to the git reset section on how to erase these changes. In either case, once you have decided your repository is ready to fold in some new information, you will use the "git pull" command. Note that this pulls from the online repository that you are connected to by default. If you want to pull from elsewhere, you will need to specify.
+If you want to save your code, you can either create a commit or use a stash functionality not covered in this guide. If there are changes that you don't want, refer to the git reset section on how to erase these changes. In either case, once you have decided your repository is ready to fold in some new information, you will use the "git pull" command. Note that this pulls from the online repository that you are connected to by default. If you want to pull from elsewhere, you will need to specify.
 
 Here is an example of me pulling an update from GitHub:
+
+<p align="center">
+  <img src="../Images/git_pull.png"
+</p>
+
+In this example, the green + symbols incidate the number of lines added to that file. Similarly, the red - indicate the number of lines deleted from those files. Anything that goes from 0 to some number of bytes indicates a file that was created in the commits that you pulled. Note that pulling is different than cloning because in a pull, there is the assumption that the repository is already set up and only has to have a few files updated in order to match the online version.
 
 
 #### git push
 Once you have made changes in your local repository, you can push this changes up to GitHub so that your partner can see your changes and so that if your laptop crashes, you have a backup of your code. As a reminder, git push comes after you have added a new commit. If you have not added a new commit, then you won't be able to push anything.
 
-First, you should make sure that your local branch is up to date, this is done through the git pull command shown above. If your local repository is not up to date, git will not know what to do and you will get an error. After you have checked that your local repository is up to date, you will use the command "git push" and if you want a destination after it. This destination will be useful if you are working with branches as described below. For now, here is a screenshot depicting a successful push.
+First, you should make sure that your local branch is up to date, this is done through the git pull command shown above. If your local repository is not up to date, git will not know what to do and you will get an error. After you have checked that your local repository is up to date, you will use the command "git push" and if you want a destination after it. This destination will be useful if you are working with branches as described below. Shown below is a screenshot of git push.
+
+<p align="center">
+  <img src="../Images/gitpush.png"
+</p>
