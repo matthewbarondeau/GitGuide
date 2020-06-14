@@ -9,9 +9,7 @@
   - [Navigating a bash shell](#navigating-a-bash-shell)
   - [Git Commands](#git-commands)
 - [GitHub Desktop](#GitHub-Desktop)
-- [Use with Keil](#use-with-keil)
-  - [Importing files to Keil Project](#importing-files-to-keil-project)
-  - [Files that need to be shared between computers](#files-that-need-to-be-shared-between-computers)
+- [Keil Example](#Keil-Example)
 
 <!-- /TOC -->
 
