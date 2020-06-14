@@ -6,6 +6,17 @@
 - [GIT Background](#git-background)
   - [Introduction to Git](#Introduction-to-Git)
 - [Git Bash](#git-bash)
+  - [Navigating a bash shell](#navigating-a-bash-shell)
+    -[Finding out where you are](#finding-out-where-you-are)
+    -[Changing Directories](#Changing-Directories)
+    -[Creating Directories](#Creating-Directories)
+    -[Removing Files](#Removing-Files)
+    -[Removing Directories](#Removing-Directories)
+  - [Git Commands](#git-commands)
+    -[Creating a repository](#creating-a-git-repository)
+    -[Creating a commit](#creating-a-commit)
+    -[Keeping track of your commits](#keeping-track-of-your-commits)
+    -[Synchronizing between computers](#Synchronizing-between-computers)
 - [GitHub Desktop](#GitHub-Desktop)
 - [Use with Keil](#use-with-keil)
   - [Importing files to Keil Project](#importing-files-to-keil-project)
@@ -71,7 +82,7 @@ If you want to remove a folder, you can use "rm -rf dirname" to remove a full di
 </p>
 
 ### Git commands
-#### Creating and Initializing a git repository
+#### Creating a git repository
 To start using git, we need to setup a git repository. The first step, is lets make a repository on GitHub itself. To do this in EE319k, you can accept the link that the TAs send out for the GitHub classroom. For the sake of completeness however, I will walk you through how to setup your own repository.
 
 When you first open up GitHub, go to the top left of your screen. There will be a small green box that says "new". Click this box. A new window will pop up with options for the repository. You are required to select a repository name, what you want the repository to be called, and choose if the repository is public or private. A public repository can be seen by anyone coming to your GitHub page, so it is best to not put class projects in a public repository. Private repositories means that only you and people you select can make changes to this repository.
