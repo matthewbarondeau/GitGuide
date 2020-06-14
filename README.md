@@ -212,20 +212,27 @@ Git bash is a bash shell that you can download to do all your git commits. This 
 
 
 
-## Use with Keil
-This section shall describe how to use git specifically with Keil projects. There will also be a section in which I show the process for adding files between Keil users and pulling them down.
+## Keil Example
+This section shall describe how to use git specifically with Keil projects. If you are in a hurry, just duplicate the commands shown in the example below and everything should work okay. I'd still encourage you to read the rest of the document to find out what is going on, but you can save that for a later time.
 
-### Example
-First, I am going to create a repository on GitHub for my first assignment. Then I am going to push the folder containing my project up to GitHub.
+First, I am going to create a repository on GitHub for my first assignment. Then I am going to push the folder containing my project up to GitHub. For EE319k, you will get a link from the TAs to create a repository. Use this repository address for your assignments. The first step is initializing your local directory to be a git repository. If you try to do any other command besides git init first, you'll end up with the "fatal: not a git repository message".
 
-![](Images/Example1.png)
+My recommendation is to navigate into the folder inside ValvanoWare that has the files for this lab. For example, navigate inside of your Lab 3 folder, and then use "git init". Then add the remote repository that you setup with the link from the TAs. Finally, add a bunch of files, create a commit message, and push the commit up to GitHub. These steps are all shown in the example below.
 
-Now, I am going to make several changes and add a few files. The git log below shows my changes but if I wanted a more in depth view I could use git diff with the two commit ID's. An example here would be "git diff 304c667 cf4daa".
+<p align="center">
+  <img src="Images/Example1.png"
+</p>
 
-![](Images/Example2.png)
+Now, I am going to pull this project onto a different computer. Any file that you already had added to your project in Keil 5 will show up with the new changes. If your partner added a new file to their project, you will have to manually add that file when you pull.
 
-From here, I am going to pull this project onto a different computer. With Keil 5, you should be able to see any new files added to the project. If that is not the case, you can manually add them as shown below:
+// Add image of pulling project to another computer
 
-![](Images/Example3.PNG)
+To manually add a file, right click on the source folder shown in the project window on the left. Then select "add existing files to group source". This will pull up a window where you can find the .c, .h, or .s file that your partner has added. An example of these windows is shown below.
 
-![](Images/Example4.PNG)
+<p align="center">
+  <img src="Images/Example3.png"
+</p>
+
+<p align="center">
+  <img src="Images/Example4.png"
+</p>
