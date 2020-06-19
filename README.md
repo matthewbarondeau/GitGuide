@@ -7,6 +7,7 @@
   - [Introduction to Git](#Introduction-to-Git)
 - [Keil Example](#Keil-Example)
 - [Git Bash](#git-bash)
+  - [Overview](#Overview)
   - [Navigating a bash shell](#navigating-a-bash-shell)
   - [Git Commands](#git-commands)
 - [GitHub Desktop](#GitHub-Desktop)
@@ -80,6 +81,8 @@ In case you partner adds a file to the keil project, if you want to see the file
 </p>
 
 ## Git Bash
+### Overview
+Git bash is a bash shell that you can download to do all your git commits. This is the approach I recommend that you take to using git. It allows much more control over the commit process and allows you to become more familiar with the bash shell in general. To start, you need to download Git Bash onto your machine. The link to find Git Bash is here: https://git-scm.com/downloads
 
 ### Navigating a bash shell
 #### Finding out where you are
@@ -229,7 +232,7 @@ Here you can see the commit followed by an alphanumeric string. This string is t
 Now that you have created some commits and viewed the log, it may be beneficial to find what changed between commits. Or more commonly, what your partner changed in their commits. To view the difference, the command is "git diff" if you want to see all changes. You can also use "git diff filename" to see the changes in one particular file. Shown below is an example diff, where the removed text is in red and the new additions are green. You can also see new file additions using this command.
 
 <p align="center">
-  <img src="Images/gitdiff.png"
+  <img src="Images/gitdiff.PNG"
 </p>
 
 #### Synchronizing between computers
@@ -257,8 +260,6 @@ First, you should make sure that your local branch is up to date, this is done t
   <img src="Images/gitpush.png"
 </p>
 
-##### Overview
-Git bash is a bash shell that you can download to do all your git commits. This is the approach I recommend that you take to using git. It allows much more control over the commit process and allows you to become more familiar with the bash shell in general. To start, you need to download Git Bash onto your machine. The link to find Git Bash is here: https://git-scm.com/downloads
 
 
 ## GitHub Desktop
