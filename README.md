@@ -5,18 +5,17 @@
 <!-- TOC -->
 - [GIT Background](#git-background)
   - [Introduction to Git](#Introduction-to-Git)
+- [Keil Example](#Keil-Example)
 - [Git Bash](#git-bash)
   - [Navigating a bash shell](#navigating-a-bash-shell)
   - [Git Commands](#git-commands)
 - [GitHub Desktop](#GitHub-Desktop)
-- [Keil Example](#Keil-Example)
-
 <!-- /TOC -->
 
 ## Git Background
 
 ### Introduction to Git
-A version control language is a tool that tracks changes to files and provides users a way to review past changes. There are several version control tools available to you for free, but in EE306 and EE319k we will primarily use Git. Git has two large online repositories that grant free accounts, GitLab and GitHub, but we shall primarily use GitHub.
+A version control language is a tool that tracks changes to files and provides users a way to review past changes. There are several version control tools available to you for free, but in EE306 and EE319k we will primarily use Git. Git has two large online repositories that grant free accounts, GitLab and GitHub, but we shall primarily use GitHub. If you are pushed for time, feel free to skip to the Keil Example section. This section contains an example and all the information you need for the class. If you are interested in git in general, feel free to read the rest of the document.
 
 A version control language tracks the status of a directory and can create specific save spots. The user can choose which changes to save and come back to. In programming, we can use version control languages to save points where significant progress in code has been made.
 
