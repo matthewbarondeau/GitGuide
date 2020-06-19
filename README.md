@@ -24,6 +24,62 @@ Git was invented by Linus Torvalds. In the years since, it has become a popular 
 
 Git works by having a staging area, a working area, and a series of saved commits. First, let me describe the working area. The working area is the files that you are working on. Think of this as the files that appear and that you can change. Git can see all the changes in this working area, but you have to tell git to care about certain files and save their state. This saving process is two fold. First, you need to move the files you care about to a staging area. Then, once you have everything you want to save there, you perform a commit. The commit will move everything in your staging area into the saved commit. In this way, you can create save points in your code as you work.
 
+## Keil Example
+This section shall describe how to use git specifically with Keil projects for EE319k. If you are in a hurry, just duplicate the commands shown in the example below and everything should work okay. I'd still encourage you to read the rest of the document to find out what is going on, but you can save that for a later time.
+
+First, I am going to create a repository on GitHub for my first assignment. Then I am going to push the folder containing my project up to GitHub. For EE319k, you will get a link from the TAs to create a repository. Use this repository address for your assignments. The first step is initializing your local directory to be a git repository. Navigate inside the ValvanoWare folder that is for that lab. For example, navigate inside of your Lab 3 folder and use "git init" to initialize the directory. If you try to do any other command besides git init first, you'll end up with the "fatal: not a git repository message". The image below shows the successful and unsuccessful initialization messages.
+
+<p align="center">
+  <img src="Images/Example_Init.png"
+</p>
+
+Next, we need to tell the directory to connect to your github repository. Do this with "git remote add origin https_link". The "https_link" refers to the https link on the github page. An example would be: https://github.com/matthewbarondeau/GitGuide.git
+
+<p align="center">
+  <img src="Images/Example_Remote.png"
+</p>
+
+Add the files into your github repository. For convience sake, I suggest you do the following commands: "git add *.c", "git add *.s" , and "git add *.h".  These commands will add all the C, assembly, and header files in your project to the repository. You are free to use "git add ." which will add all files in the repository, but this can create a bit of a mess if you have a merge conflict.
+
+<p align="center">
+  <img src="Images/Example_add.png"
+</p>
+
+Once you have added the files, type "git commit -m " followed by some message saying what that commit will do.
+
+<p align="center">
+  <img src="Images/Example_Commit.png"
+</p>
+
+Finally, use "git push -u origin master" to push your commit up to the primary branch on github.For later pushes, you don't need the -u and master, but can just use "git push origin"
+
+<p align="center">
+  <img src="Images/Example_Push.png"
+</p>
+
+Thats all for pushing. To get the code onto a partners machine, you will need to pull the repository. Have your partner navigate to their Lab 3 folder and type "git init" and "git remote add origin https_link" just as you did. Then, use "git pull origin master" to pull the code from the main branch on github into the local repository. If you just did the .s, .c, and .h files, the new versions should be updated without a hitch. Have your partner immediately use "git push -u origin master" so that when they push changes in the future, they will go to the correct repository.
+
+<p align="center">
+  <img src="Images/Example_Partner1.png"
+</p>
+
+Now once you and your partner have the same version of the code, one partner can make edits, add, and commit but should then push up the code changes for their partner. The partner should then pull the code down, make more edits, then push their changed code. In other words, the flow of programming should be:
+1. git add *.c *.h *.s
+2. git commit -m "some message"
+3. git push origin
+4. git pull
+5. repeat
+
+In case you partner adds a file to the keil project, if you want to see the file in your keil project, you will have to tell keil to use it. To manually add a file, right click on the source folder shown in the project window on the left. Then select "add existing files to group source". This will pull up a window where you can find the .c, .h, or .s file that your partner has added. An example of these windows is shown below.
+
+<p align="center">
+  <img src="Images/Example3.png"
+</p>
+
+<p align="center">
+  <img src="Images/Example4.png"
+</p>
+
 ## Git Bash
 
 ### Navigating a bash shell
@@ -207,30 +263,4 @@ Git bash is a bash shell that you can download to do all your git commits. This 
 
 
 ## GitHub Desktop
-
-
-
-## Keil Example
-This section shall describe how to use git specifically with Keil projects. If you are in a hurry, just duplicate the commands shown in the example below and everything should work okay. I'd still encourage you to read the rest of the document to find out what is going on, but you can save that for a later time.
-
-First, I am going to create a repository on GitHub for my first assignment. Then I am going to push the folder containing my project up to GitHub. For EE319k, you will get a link from the TAs to create a repository. Use this repository address for your assignments. The first step is initializing your local directory to be a git repository. If you try to do any other command besides git init first, you'll end up with the "fatal: not a git repository message".
-
-My recommendation is to navigate into the folder inside ValvanoWare that has the files for this lab. For example, navigate inside of your Lab 3 folder, and then use "git init". Then add the remote repository that you setup with the link from the TAs. Finally, add a bunch of files, create a commit message, and push the commit up to GitHub. These steps are all shown in the example below.
-
-<p align="center">
-  <img src="Images/Example1.png"
-</p>
-
-Now, I am going to pull this project onto a different computer. Any file that you already had added to your project in Keil 5 will show up with the new changes. If your partner added a new file to their project, you will have to manually add that file when you pull.
-
-// Add image of pulling project to another computer
-
-To manually add a file, right click on the source folder shown in the project window on the left. Then select "add existing files to group source". This will pull up a window where you can find the .c, .h, or .s file that your partner has added. An example of these windows is shown below.
-
-<p align="center">
-  <img src="Images/Example3.png"
-</p>
-
-<p align="center">
-  <img src="Images/Example4.png"
-</p>
+I'll add this eventually
