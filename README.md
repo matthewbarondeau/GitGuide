@@ -36,7 +36,7 @@ First, I am going to create a repository on GitHub for my first assignment. Then
 Next, we need to tell the directory to connect to your github repository. Do this with "git remote add origin https_link". The "https_link" refers to the https link on the github page. An example would be: https://github.com/matthewbarondeau/GitGuide.git
 
 <p align="center">
-  <img src="Images/Example_Remote.png"
+  <img src="Images/Example_remote.png"
 </p>
 
 Add the files into your github repository. For convience sake, I suggest you do the following commands: "git add *.c", "git add *.s" , and "git add *.h".  These commands will add all the C, assembly, and header files in your project to the repository. You are free to use "git add ." which will add all files in the repository, but this can create a bit of a mess if you have a merge conflict.
@@ -73,11 +73,11 @@ Now once you and your partner have the same version of the code, one partner can
 In case you partner adds a file to the keil project, if you want to see the file in your keil project, you will have to tell keil to use it. To manually add a file, right click on the source folder shown in the project window on the left. Then select "add existing files to group source". This will pull up a window where you can find the .c, .h, or .s file that your partner has added. An example of these windows is shown below.
 
 <p align="center">
-  <img src="Images/Example3.png"
+  <img src="Images/Example3.PNG"
 </p>
 
 <p align="center">
-  <img src="Images/Example4.png"
+  <img src="Images/Example4.PNG"
 </p>
 
 ## Git Bash
