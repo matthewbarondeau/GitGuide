@@ -1,5 +1,5 @@
 
-# Electrical Engineering Git Guide
+# EE319k Git Guide
 
 ## Table of Contents
 <!-- TOC -->
